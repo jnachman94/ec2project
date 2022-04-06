@@ -55,6 +55,12 @@ hooks:
 #   revision's file bundle.
 # During the ApplicationStart deployment lifecycle event, run the commands 
 #   in the script specified in "location".
+  BeforeInstall:
+    - location: scripts/before_install.sh   
+      timeout: 300
+      runas: ec2-user
+# During the ApplicationStart deployment lifecycle event, run the commands 
+#   in the script specified in "location".
   ApplicationStart:
     - location: scripts/application_start.sh   
       timeout: 300
