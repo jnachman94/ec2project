@@ -53,18 +53,6 @@ hooks:
 # During the ApplicationStop deployment lifecycle event, run the commands 
 #   in the script specified in "location" starting from the root of the 
 #   revision's file bundle.
-# During the BeforeInstall deployment lifecycle event, run the commands 
-#   in the script specified in "location".
-  BeforeInstall:
-    - location: scripts/before_install.sh
-      timeout: 300
-      runas: ec2-user
-# During the AfterInstall deployment lifecycle event, run the commands 
-#   in the script specified in "location".
-  AfterInstall:
-    - location: scripts/after_install.sh
-      timeout: 300
-      runas: ec2-user
 # During the ApplicationStart deployment lifecycle event, run the commands 
 #   in the script specified in "location".
   ApplicationStart:
