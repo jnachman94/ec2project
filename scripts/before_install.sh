@@ -5,6 +5,6 @@ curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.34.0/install.sh | bash
 
 nvm install node
 
-source /home/ec2-user/.bash_profile
+#source /home/ec2-user/.bash_profile
 
-sudo npm install forever -g
+npm install forever -g
